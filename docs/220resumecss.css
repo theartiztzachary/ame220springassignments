@@ -1,0 +1,80 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  color: #38303D;
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+}
+
+body {
+  background-color: #D5D5DE;
+}
+
+a .href {
+  color: blue;
+}
+
+ol, ul, li {
+ all: revert;
+}
+
+#toptitle {
+  font-variant: small-caps;
+  color: ##9107ED;
+  background-color: #EAC9FF;
+  margin: 1em 0 0 0;
+  text-align: center;
+}
+
+#header {
+  text-align: center;
+  background-color: #EAC9FF;
+}
+
+h2 {
+	margin: 0 0 1em 0;
+  font-variant: small-caps;
+}
+
+#accordion input {
+	display: none;
+}
+#accordion label {
+	background: #C7ABD9;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+}
+#accordion label:hover {
+	background: #EAC9FF;
+}
+
+#accordion input:checked + label {
+	background: #EAC9FF;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	color: white;
+	margin-bottom: 0;
+}
+#accordion article {
+	background: #FFFFFF;
+	height:0px;
+	overflow:hidden;
+	z-index:10;
+}
+#accordion article p {
+	padding: 1em;
+}
+#accordion input:checked article {
+}
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
